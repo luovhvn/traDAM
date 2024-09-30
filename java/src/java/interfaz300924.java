@@ -57,8 +57,8 @@ public class interfaz300924 extends JFrame {
 		passwordField.setBounds(65, 109, 96, 19);
 		contentPane.add(passwordField);
 		
-		JButton btnNewButton = new JButton("Aceptar");
-		btnNewButton.setBounds(163, 148, 85, 21);
+		JButton btnNewButton = new JButton("Iniciar sesión");
+		btnNewButton.setBounds(155, 148, 106, 21);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
