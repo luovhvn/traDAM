@@ -11,6 +11,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JLabel;
 
 public class interfaz300924 extends JFrame {
 
@@ -48,20 +49,28 @@ public class interfaz300924 extends JFrame {
 		contentPane.setLayout(null);
 		
 		textField = new JTextField();
-		textField.setBounds(51, 53, 96, 19);
+		textField.setBounds(65, 52, 96, 19);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		passwordField = new JPasswordField();
-		passwordField.setBounds(51, 93, 96, 19);
+		passwordField.setBounds(65, 109, 96, 19);
 		contentPane.add(passwordField);
 		
 		JButton btnNewButton = new JButton("Aceptar");
+		btnNewButton.setBounds(163, 148, 85, 21);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		btnNewButton.setBounds(163, 148, 85, 21);
 		contentPane.add(btnNewButton);
+		
+		JLabel lblNewLabel = new JLabel("Usuario");
+		lblNewLabel.setBounds(41, 29, 45, 13);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("Contraseña");
+		lblNewLabel_1.setBounds(41, 86, 65, 13);
+		contentPane.add(lblNewLabel_1);
 	}
 }
