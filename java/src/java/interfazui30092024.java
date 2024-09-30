@@ -9,11 +9,17 @@ import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.JLabel;
 import java.awt.Font;
+import java.awt.Image;
+
 import javax.swing.JInternalFrame;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
 import java.awt.Color;
+import java.awt.SystemColor;
+import javax.swing.UIManager;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class interfazui30092024 extends JFrame {
 
@@ -85,9 +91,15 @@ public class interfazui30092024 extends JFrame {
 		contentPane.add(lblNewLabel_2_1);
 		
 		JButton btnNewButton = new JButton("ENTRAR");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNewButton.setFont(new Font("Arial Black", Font.PLAIN, 10));
 		btnNewButton.setForeground(new Color(0, 0, 255));
-		btnNewButton.setBackground(new Color(0, 0, 205));
+		btnNewButton.setBackground(new Color(0, 0, 255));
 		btnNewButton.setBounds(10, 232, 85, 21);
 		contentPane.add(btnNewButton);
+		
 	}
 }
