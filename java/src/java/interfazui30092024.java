@@ -20,13 +20,15 @@ import java.awt.SystemColor;
 import javax.swing.UIManager;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JSeparator;
+import javax.swing.DropMode;
 
 public class interfazui30092024 extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField textField;
 	private JPasswordField passwordField;
+	private JTextField txtIng;
 
 	/**
 	 * Launch the application.
@@ -58,12 +60,18 @@ public class interfazui30092024 extends JFrame {
 		
 		passwordField = new JPasswordField();
 		passwordField.setBounds(10, 192, 234, 19);
+		passwordField.setBorder(null);
+		passwordField.setBackground(SystemColor.menu);
 		contentPane.add(passwordField);
 		
-		textField = new JTextField();
-		textField.setBounds(10, 136, 234, 19);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		txtIng = new JTextField();
+		txtIng.setDisabledTextColor(new Color(0, 0, 0));
+		txtIng.setBounds(10, 136, 234, 19);
+		txtIng.setBorder(null);
+		txtIng.setColumns(10);
+		txtIng.setBackground(SystemColor.menu);
+		txtIng.setForeground(new Color(0, 0, 0));
+		contentPane.add(txtIng);
 		
 		JLabel lblNewLabel = new JLabel("Contraseña");
 		lblNewLabel.setBounds(10, 168, 102, 25);
@@ -80,26 +88,45 @@ public class interfazui30092024 extends JFrame {
 		lblNewLabel_2.setFont(new Font("Arial Black", Font.PLAIN, 13));
 		contentPane.add(lblNewLabel_2);
 		
-		JLabel lblNewLabel_3 = new JLabel("New label");
-		lblNewLabel_3.setIcon(new ImageIcon("C:\\Users\\Mañana.ASIR4\\Downloads\\istockphoto-1284969926-612x612.jpg"));
-		lblNewLabel_3.setBounds(254, 0, 182, 263);
-		contentPane.add(lblNewLabel_3);
-		
 		JLabel lblNewLabel_2_1 = new JLabel("INICIAR SESIÓN");
-		lblNewLabel_2_1.setFont(new Font("Arial Black", Font.PLAIN, 13));
 		lblNewLabel_2_1.setBounds(10, 71, 125, 19);
+		lblNewLabel_2_1.setFont(new Font("Arial Black", Font.PLAIN, 13));
 		contentPane.add(lblNewLabel_2_1);
 		
 		JButton btnNewButton = new JButton("ENTRAR");
+		btnNewButton.setBorderPainted(false);
+		btnNewButton.setBounds(10, 232, 85, 21);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
 		btnNewButton.setFont(new Font("Arial Black", Font.PLAIN, 10));
-		btnNewButton.setForeground(new Color(0, 0, 255));
-		btnNewButton.setBackground(new Color(0, 0, 255));
-		btnNewButton.setBounds(10, 232, 85, 21);
+		btnNewButton.setForeground(new Color(255, 255, 255));
+		btnNewButton.setBackground(new Color(0, 128, 255));
 		contentPane.add(btnNewButton);
+		
+		JSeparator separator = new JSeparator();
+		separator.setBounds(10, 156, 233, 2);
+		contentPane.add(separator);
+		
+		JSeparator separator_1 = new JSeparator();
+		separator_1.setBounds(11, 212, 233, 2);
+		contentPane.add(separator_1);
+		
+		JLabel lblNewLabel_4 = new JLabel("New label");
+		lblNewLabel_4.setBounds(10, 13, 45, 39);
+		lblNewLabel_4.setIcon(new ImageIcon("C:\\Users\\Mañana.ASIR4\\Downloads\\favicon.png"));
+		contentPane.add(lblNewLabel_4);
+		
+		JLabel lblNewLabel_5 = new JLabel("");
+		lblNewLabel_5.setBounds(273, 18, 153, 167);
+		lblNewLabel_5.setIcon(new ImageIcon("C:\\Users\\Mañana.ASIR4\\Downloads\\logo.png"));
+		contentPane.add(lblNewLabel_5);
+		
+		JLabel lblNewLabel_3 = new JLabel("New label");
+		lblNewLabel_3.setBounds(257, 0, 192, 263);
+		lblNewLabel_3.setIcon(new ImageIcon("C:\\Users\\Mañana.ASIR4\\Downloads\\city.png"));
+		contentPane.add(lblNewLabel_3);
 		
 	}
 }
