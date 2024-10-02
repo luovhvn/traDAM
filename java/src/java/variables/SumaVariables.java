@@ -8,6 +8,6 @@ public class SumaVariables {
 		
 		int suma = num1 + num2;
 		
-		System.out.println("El resultado de la suma es ", suma);
+		System.out.println("El resultado de la suma es " + suma);
 	}
 }
