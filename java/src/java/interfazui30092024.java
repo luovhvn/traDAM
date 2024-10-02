@@ -8,6 +8,8 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 import java.awt.Image;
 
@@ -22,6 +24,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JSeparator;
 import javax.swing.DropMode;
+import java.awt.Cursor;
 
 public class interfazui30092024 extends JFrame {
 
@@ -59,12 +62,14 @@ public class interfazui30092024 extends JFrame {
 		contentPane.setLayout(null);
 		
 		passwordField = new JPasswordField();
+		passwordField.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		passwordField.setBounds(10, 192, 234, 19);
 		passwordField.setBorder(null);
 		passwordField.setBackground(SystemColor.menu);
 		contentPane.add(passwordField);
 		
 		txtIng = new JTextField();
+		txtIng.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		txtIng.setDisabledTextColor(new Color(0, 0, 0));
 		txtIng.setBounds(10, 136, 234, 19);
 		txtIng.setBorder(null);
@@ -94,10 +99,22 @@ public class interfazui30092024 extends JFrame {
 		contentPane.add(lblNewLabel_2_1);
 		
 		JButton btnNewButton = new JButton("ENTRAR");
+		btnNewButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		btnNewButton.setBorderPainted(false);
 		btnNewButton.setBounds(10, 232, 85, 21);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
+				char[] Clave = passwordField.getPassword();
+				String claveFinal = new String(Clave);
+				
+				if(txtIng.getText().equals("Luis") && claveFinal.equals("1234")) {
+					dispose();
+					System.out.print("Has iniciado sesión");
+					
+				}else {
+					System.out.print("Usuario o contraseña incorrectos");
+				}
 			}
 		});
 		btnNewButton.setFont(new Font("Arial Black", Font.PLAIN, 10));
