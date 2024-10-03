@@ -3,13 +3,13 @@ package java.sentencias_control;
 import java.util.Scanner;
 
 public class numparimpar03102024 {
-	public static void main (String[] arg) {
+	public static void main (String[] args) {
 	
 		Scanner leer = new Scanner(System.in);
 		
 		System.out.println("Introduce un texto");
 		String variable = leer.nextLine();
-		int num = parseInt(variable);
+		int num = Integer.parseInt(variable);
 		
 		if(num % 2 == 0) {
 			System.out.println("El número es par");
@@ -17,4 +17,5 @@ public class numparimpar03102024 {
 			System.out.println("El número es impar");
 		}
 	}
+
 }
