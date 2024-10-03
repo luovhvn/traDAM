@@ -8,9 +8,10 @@ public class numparimpar03102024 {
 		Scanner leer = new Scanner(System.in);
 		
 		System.out.println("Introduce un texto");
-		String num = leer.nextLine();
+		String variable = leer.nextLine();
+		int num = parseInt(variable);
 		
-		if(num / 2 == 0) {
+		if(num % 2 == 0) {
 			System.out.println("El número es par");
 		}else {
 			System.out.println("El número es impar");
