@@ -10,7 +10,7 @@ public class numparimpar03102024 {
 		System.out.println("Introduce un texto");
 		String num = leer.nextLine();
 		
-		if(num/2 == 0) {
+		if(num / 2 == 0) {
 			System.out.println("El número es par");
 		}else {
 			System.out.println("El número es impar");
