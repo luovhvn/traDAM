@@ -7,7 +7,7 @@ public class numparimpar03102024 {
 	
 		Scanner leer = new Scanner(System.in);
 		
-		System.out.println("Introduce un texto");
+		System.out.println("Introduce un número");
 		String variable = leer.nextLine();
 		int num = Integer.parseInt(variable);
 		
