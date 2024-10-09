@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class puntuación07102024 {
 	public static void main(String[] ags) {
 
-		Scanner scan = new Scanner(System.in);
+		Scanner scan1 = new Scanner(System.in);
 
 		System.out.println("Introduce la nota");
-		int num = scan.nextInt();
+		int num = scan1.nextInt();
 
 		if (num >= 90) {
 			System.out.println("Su nota es una A");
