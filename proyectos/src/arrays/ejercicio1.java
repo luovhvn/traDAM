@@ -1,20 +1,16 @@
 package arrays;
 
-import java.util.Scanner;
-
 public class ejercicio1 {
-		public static void main (String [] args) {
+		public static void main (String[] args) {
 			
-			Scanner scan = new Scanner(System.in);
-			
-			System.out.println("Escribe un número");
-			int num = scan.nextInt();
-			
-			if (num % 2 == 0) {
-				System.out.println("El número es par");
-			} else {
-				System.out.println("El número es impar");
-			}
-			
+	        int[] numeros = new int[10]; 
+
+	        for (int i = 0; i < numeros.length; i++) { 
+	            numeros[i] = i + 1; 
+	        } 
+
+	        for (int numero : numeros) { 
+	            System.out.println(numero); 
+	        } 
 		}
 }
