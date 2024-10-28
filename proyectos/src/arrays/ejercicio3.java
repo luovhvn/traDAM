@@ -1,6 +1,6 @@
 package arrays;
 
-public class Contar_Vocales_en_un_Array_de_Caracteres {
+public class ejercicio3 {
 
 	public static void main(String[] args) {
 		String cadena = "dinosaurio";
