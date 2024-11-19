@@ -1,25 +1,20 @@
 package arrays;
 
 public class ejercicio3 {
-
-	public static void main(String[] args) {
-		String cadena = "dinosaurio";
-
-		char[] arrayCaracteres = new char[cadena.length()];
-		arrayCaracteres = cadena.toCharArray();
-		
-		int vocales = 0;
-		
-		for (int i = 0; i <= cadena.length() - 1; i++) {
-			if (arrayCaracteres[i] == 'a' || arrayCaracteres[i] == 'A'|| arrayCaracteres[i] == 'e' || arrayCaracteres[i] == 'E'
-					|| arrayCaracteres[i] == 'i' || arrayCaracteres[i] == 'I'|| arrayCaracteres[i] == 'o'||arrayCaracteres[i] == 'O'||
-					arrayCaracteres[i] == 'u'|| arrayCaracteres[i] == 'U') {
-				vocales++;
+		public static void main (String[] args) {
+			
+			int[] numeros = {15,6,4,78,62,41,18};
+			int mayor = numeros[0];
+			int menor = numeros[0];
+			
+			for (int numero : numeros) {
+				if (numero > mayor) {
+					mayor = numero;
+				}
+				if (numero < menor) {
+					menor = numero;
+				}
 			}
+			System.out.println("El núemro mayor es " + mayor + ", y el menor es " + menor);
 		}
-		System.out.println("Tiene " + vocales + " vocales");
-	}
-
 }
-
-
