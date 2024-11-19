@@ -10,7 +10,7 @@ public class ejercicio1 {
 	        } 
 
 	        for (int numero : numeros) { 
-	            System.out.println("El número es: " + numero); 
+	            System.out.println(numero); 
 	        } 
 		}
 }
